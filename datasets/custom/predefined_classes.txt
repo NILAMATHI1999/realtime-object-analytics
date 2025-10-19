@@ -1,0 +1,6 @@
+door
+tissue
+water_filter
+bero
+trolley
+cot_bed

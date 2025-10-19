@@ -1,0 +1,10 @@
+﻿train: C:/Users/aruls/Documents/real_time_detection_tracking project/datasets/custom/images/train
+val:   C:/Users/aruls/Documents/real_time_detection_tracking project/datasets/custom/images/train
+names:
+  - person
+  - chair
+  - cell phone
+  - cup
+  - bottle
+  - couch
+  - dining table

@@ -1,0 +1,7 @@
+﻿ultralytics==8.3.217
+opencv-python
+pillow
+matplotlib
+pandas
+numpy
+streamlit

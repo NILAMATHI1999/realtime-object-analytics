@@ -1,0 +1,4 @@
+﻿models/*.pt filter=lfs diff=lfs merge=lfs -text
+models/*.onnx filter=lfs diff=lfs merge=lfs -text
+data_samples/demo_videos/* filter=lfs diff=lfs merge=lfs -text
+models/*.pt filter=lfs diff=lfs merge=lfs -text
