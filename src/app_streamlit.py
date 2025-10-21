@@ -307,7 +307,7 @@ def main():
     st.caption("TTA + adaptive thresholds + light normalization for tough conditions")
 
     st.sidebar.title("⚙️ Controls")
-    default_weights = "models/best1.pt"  # change if needed
+    default_weights = "models/best_refit.pt"  # change if needed
     weights_path = st.sidebar.text_input("Model weights (.pt)", value=default_weights)
 
     # Load model + names
@@ -412,4 +412,4 @@ def main():
                                        "annotated_full.mp4", "video/mp4")
 
 if __name__ == "__main__":
-    main()
+    main()  

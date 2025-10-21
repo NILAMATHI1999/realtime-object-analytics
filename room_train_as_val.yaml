@@ -1,0 +1,5 @@
+﻿path: C:/Users/aruls/Documents/yolo_room_training_starter/dataset
+train: images/train
+val: images/train     # <-- validate on TRAIN to check learning
+nc: 7
+names: [person, chair, cell phone, cup, bottle, couch, dining table]
