@@ -11,11 +11,9 @@
 
 ---
 
-## 📋 Full Setup + Guide (Single Copyable Section)
+## 🚀 Quickstart
 
 ```bash
-# 🚀 QUICKSTART
-
 # 1️⃣ Create and activate environment
 python -m venv .venv
 .\.venv\Scripts\activate
@@ -25,74 +23,88 @@ pip install -r requirements.txt
 
 # 3️⃣ Run the Streamlit app
 streamlit run src/app_streamlit.py --server.port 8501
+````
 
+---
 
-# 📁 PROJECT STRUCTURE
+## 📁 Project Structure
 
-models/
- ├── best_refit.pt          # Main fine-tuned YOLOv8 weights
- └── best1.pt               # Earlier optional model
+| Folder / File            | Description                    |
+| ------------------------ | ------------------------------ |
+| `models/best_refit.pt`   | Main fine-tuned YOLOv8 weights |
+| `models/best1.pt`        | Earlier optional model         |
+| `src/app_streamlit.py`   | Main Streamlit interface       |
+| `test_images/`           | Sample test images             |
+| `videos/`                | Optional demo clips            |
+| `room_train_as_val.yaml` | Dataset reference file         |
+| `requirements.txt`       | Dependencies list              |
 
-src/
- └── app_streamlit.py       # Main Streamlit interface
+---
 
-test_images/                # Sample test images
-videos/                     # Optional demo clips
-room_train_as_val.yaml      # Dataset reference file
-requirements.txt            # Dependencies list
+## 🧩 Features
 
+* ✅ Real-time object detection using YOLOv8
+* ✅ Streamlit dashboard for image, video, and webcam input
+* ✅ Automatic snapshots and CSV logging
+* ✅ Lightweight analytics per detected class
+* ✅ Adaptive brightness normalization
+* ✅ Sidebar controls for filtering and performance modes
 
-# 🧩 FEATURES
+---
 
-✅ Real-time object detection using YOLOv8
-✅ Streamlit dashboard for image, video, and webcam input
-✅ Automatic snapshots and CSV logging
-✅ Lightweight analytics per detected class
-✅ Adaptive brightness normalization
-✅ Sidebar controls for filtering and performance modes
+## ⚙️ How It Works
 
+1. **Input:** User uploads image/video or enables webcam.
+2. **Detection:** YOLOv8 model (`best_refit.pt`) runs inference in real time.
+3. **Post-Processing:** Confidence filtering, normalization, and analytics logging.
+4. **Analytics:** Summaries stored (CSV) with per-class counts and timestamps.
+5. **Display:** Streamlit dashboard shows annotated frames and detection stats.
 
-# ⚙️ HOW IT WORKS
+---
 
-1. Input: User uploads image/video or enables webcam.
-2. Detection: YOLOv8 model (best_refit.pt) runs inference in real time.
-3. Post-Processing: Confidence filtering, normalization, and analytics logging.
-4. Analytics: Summaries stored as CSV with per-class counts and timestamps.
-5. Display: Streamlit dashboard shows annotated frames and detection stats.
+## 📈 Model Information
 
+| Property           | Details                                              |
+| ------------------ | ---------------------------------------------------- |
+| **Model Name**     | `best_refit.pt`                                      |
+| **Base Framework** | YOLOv8 (Ultralytics)                                 |
+| **Classes**        | 7 indoor classes                                     |
+| **Dataset**        | Custom room-based dataset                            |
+| **Use Case**       | Indoor analytics, robotics, HRI, and CV applications |
 
-# 📈 MODEL INFORMATION
+---
 
-Model Name      : best_refit.pt
-Base Framework  : YOLOv8 (Ultralytics)
-Classes         : 7 indoor classes
-Dataset         : Custom room-based dataset
-Use Case        : Indoor analytics, robotics, HRI, and CV applications
+## 🧰 Tech Stack
 
+| Category       | Tools / Libraries                  |
+| -------------- | ---------------------------------- |
+| **Language**   | Python 3.10 – 3.13                 |
+| **Frameworks** | Streamlit, Ultralytics YOLOv8      |
+| **Utilities**  | OpenCV, Pillow, Pandas, Matplotlib |
 
-# 🧰 TECH STACK
+---
 
-Language     : Python 3.10 – 3.13
-Frameworks   : Streamlit, Ultralytics YOLOv8
-Utilities    : OpenCV, Pillow, Pandas, Matplotlib
+## 📸 Demo Preview
 
+Add your screenshots or demo videos under a `docs/` folder, for example:
 
-# 📸 DEMO PREVIEW
-
-# Add your screenshots or demo videos under a docs/ folder, for example:
-# (These will automatically render on GitHub)
-
+```markdown
 ![App Demo](docs/demo_screenshot.png)
 ![Sidebar Controls](docs/sidebar_view.png)
 ![Webcam Mode](docs/webcam_demo.gif)
+```
 
+---
 
-# 🌟 FUTURE ADD-ONS
+## 🌟 Future Add-ons
 
-• Performance presets (Speed / Balanced / Quality)
-• Hybrid snapshots (contact sheet + configurable frames)
-• Frame pacing control (e.g., 20 ms delay option)
-• Grad-CAM visualization for explainability
-• FPS benchmark mode and ONNX/quantized export
-• Domain adaptations (medical / robotics / gesture datasets)
-• Auto-generated analytics report (PDF + charts)
+* 🔧 **Performance Presets** – Quick toggle between Speed / Balanced / Quality
+* 🖼️ **Hybrid Snapshots** – Combine contact sheet + configurable frame captures
+* ⏱️ **Frame Pacing Control** – Adjustable delay per frame (e.g., 20 ms)
+* 🧠 **Grad-CAM Visualization** – Explain model predictions visually
+* ⚡ **Performance Optimization** – FPS benchmarking, ONNX/quantized export
+* 🤖 **Domain Adaptations** – Extend model for medical, robotics, and gesture datasets
+* 📊 **Auto-Generated Reports** – Export PDF/CSV analytics summaries with charts
+
+---
+
