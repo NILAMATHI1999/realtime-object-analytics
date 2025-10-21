@@ -11,7 +11,7 @@
 
 ---
 
-## 📋 Full Guide (Quickstart + Structure + Features + More)
+## 📋 Full Setup + Guide (Single Copyable Section)
 
 ```bash
 # 🚀 QUICKSTART
@@ -30,57 +30,69 @@ streamlit run src/app_streamlit.py --server.port 8501
 # 📁 PROJECT STRUCTURE
 
 models/
- ├── best_refit.pt          # Main trained YOLOv8 weights
- └── best1.pt               # Earlier version (optional)
+ ├── best_refit.pt          # Main fine-tuned YOLOv8 weights
+ └── best1.pt               # Earlier optional model
 
 src/
  └── app_streamlit.py       # Main Streamlit interface
 
 test_images/                # Sample test images
 videos/                     # Optional demo clips
-room_train_as_val.yaml      # Dataset reference (labels/classes)
-requirements.txt
+room_train_as_val.yaml      # Dataset reference file
+requirements.txt            # Dependencies list
 
 
 # 🧩 FEATURES
 
-✅ Real-time object detection (YOLOv8)
-✅ Streamlit web dashboard for image/video uploads and webcam mode
-✅ Automatic snapshot saving and CSV logging
-✅ Lightweight analytics with per-class summary
-✅ Adaptive brightness normalization and confidence fallback
-✅ Optimized sidebar for class filtering and performance modes
+✅ Real-time object detection using YOLOv8
+✅ Streamlit dashboard for image, video, and webcam input
+✅ Automatic snapshots and CSV logging
+✅ Lightweight analytics per detected class
+✅ Adaptive brightness normalization
+✅ Sidebar controls for filtering and performance modes
 
 
-# 📈 MODEL INFO
+# ⚙️ HOW IT WORKS
 
-• Fine-tuned YOLOv8 model: best_refit.pt  
-• Trained on a custom indoor dataset (7 object classes)  
-• Balanced for real-world room environments  
-• Ideal for robotics, HRI, and scene-understanding applications
+1. Input: User uploads image/video or enables webcam.
+2. Detection: YOLOv8 model (best_refit.pt) runs inference in real time.
+3. Post-Processing: Confidence filtering, normalization, and analytics logging.
+4. Analytics: Summaries stored as CSV with per-class counts and timestamps.
+5. Display: Streamlit dashboard shows annotated frames and detection stats.
 
 
-# 📸 DEMO PREVIEW
+# 📈 MODEL INFORMATION
 
-(Add your Streamlit screenshots or a short demo video here later)
-Example:
-![App Demo](docs/demo_screenshot.png)
+Model Name      : best_refit.pt
+Base Framework  : YOLOv8 (Ultralytics)
+Classes         : 7 indoor classes
+Dataset         : Custom room-based dataset
+Use Case        : Indoor analytics, robotics, HRI, and CV applications
 
 
 # 🧰 TECH STACK
 
-• Python 3.10–3.13  
-• Ultralytics YOLOv8 (v8.3.217)  
-• Streamlit for UI  
-• OpenCV, Pillow, Pandas, Matplotlib
+Language     : Python 3.10 – 3.13
+Frameworks   : Streamlit, Ultralytics YOLOv8
+Utilities    : OpenCV, Pillow, Pandas, Matplotlib
+
+
+# 📸 DEMO PREVIEW
+
+# Add your screenshots or demo videos under a docs/ folder, for example:
+# (These will automatically render on GitHub)
+
+![App Demo](docs/demo_screenshot.png)
+![Sidebar Controls](docs/sidebar_view.png)
+![Webcam Mode](docs/webcam_demo.gif)
 
 
 # 🌟 FUTURE ADD-ONS
 
-• Performance presets (Speed / Balanced / Quality)  
-• Hybrid snapshots (contact sheet + configurable frames)  
-• Frame pacing control (e.g., 20 ms delay option)  
-• Grad-CAM visualization for model explainability  
-• FPS benchmark mode and ONNX/quantized export  
-• Domain adaptations (medical / robotics / gesture datasets)  
+• Performance presets (Speed / Balanced / Quality)
+• Hybrid snapshots (contact sheet + configurable frames)
+• Frame pacing control (e.g., 20 ms delay option)
+• Grad-CAM visualization for explainability
+• FPS benchmark mode and ONNX/quantized export
+• Domain adaptations (medical / robotics / gesture datasets)
 • Auto-generated analytics report (PDF + charts)
