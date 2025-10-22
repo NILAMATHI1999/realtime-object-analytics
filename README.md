@@ -84,14 +84,81 @@ streamlit run src/app_streamlit.py --server.port 8501
 
 ---
 
-## 📸 Demo Preview
+Perfect 👍 I see your screenshot names clearly.
+Let’s now create the **📸 Demo Preview** section for your `README.md` that matches your actual files inside `images/`.
 
-Add your screenshots or demo videos under a `docs/` folder, for example:
+Here’s the ready-to-paste code block 👇
+
+---
 
 ```markdown
-![App Demo](docs/demo_screenshot.png)
-![Sidebar Controls](docs/sidebar_view.png)
-![Webcam Mode](docs/webcam_demo.gif)
+## 📸 Demo Preview
+
+### 🖥️ App Dashboard
+| Dashboard Up | Dashboard Run | Dashboard Down |
+|:-------------:|:--------------:|:---------------:|
+| ![Dashboard Up](images/dashboard%20up.png) | ![Dashboard Run](images/dashboard%20run.png) | ![Dashboard Down](images/dashboard%20down.png) |
+
+---
+
+### 🎬 Detection Demos
+| Demo 1.1 | Demo 1.2 |
+|:--------:|:---------:|
+| ![Demo 1.1](images/demo1.1.png) | ![Demo 1.2](images/demo1.2.png) |
+
+| Demo 2.1 | Demo 2.2 |
+|:--------:|:---------:|
+| ![Demo 2.1](images/demo2.1.png) | ![Demo 2.2](images/demo2.2.png) |
+
+---
+
+### 📊 Analytics Overview
+| Bar Chart | Pie Chart |
+|:----------:|:----------:|
+| ![Analytics 1](images/demo1analytics1.png) | ![Analytics 2](images/demo1analytics2.png) |
+
+| Analytics Table | Annotated Video |
+|:----------------:|:----------------:|
+| ![Analytics 3](images/demo1analytics3.png) | ![Analytics 4](images/demo1analytics4.png) |
+```
+
+
+Perfect 👍 I see your screenshot names clearly.
+Let’s now create the **📸 Demo Preview** section for your `README.md` that matches your actual files inside `images/`.
+
+Here’s the ready-to-paste code block 👇
+
+---
+
+```markdown
+## 📸 Demo Preview
+
+### 🖥️ App Dashboard
+| Dashboard Up | Dashboard Run | Dashboard Down |
+|:-------------:|:--------------:|:---------------:|
+| ![Dashboard Up](images/dashboard%20up.png) | ![Dashboard Run](images/dashboard%20run.png) | ![Dashboard Down](images/dashboard%20down.png) |
+
+---
+
+### 🎬 Detection Demos
+| Demo 1.1 | Demo 1.2 |
+|:--------:|:---------:|
+| ![Demo 1.1](images/demo1.1.png) | ![Demo 1.2](images/demo1.2.png) |
+
+| Demo 2.1 | Demo 2.2 |
+|:--------:|:---------:|
+| ![Demo 2.1](images/demo2.1.png) | ![Demo 2.2](images/demo2.2.png) |
+
+---
+
+### 📊 Analytics Overview
+| Bar Chart | Pie Chart |
+|:----------:|:----------:|
+| ![Analytics 1](images/demo1analytics1.png) | ![Analytics 2](images/demo1analytics2.png) |
+
+| Analytics Table | Annotated Video |
+|:----------------:|:----------------:|
+| ![Analytics 3](images/demo1analytics3.png) | ![Analytics 4](images/demo1analytics4.png) |
 ```
 
 ---
