@@ -1,9 +1,3 @@
-Here’s your **final, ready-to-use `README.md`** — everything integrated (badges, structure, demo images, future add-ons, etc.).
-Just paste this entire file into your project’s root folder (`real_time_detection_tracking project/README.md`) and commit.
-
----
-
-````markdown
 # 🧠 Realtime Object Analytics (YOLOv8 + Streamlit)
 
 > Interactive web app for **real-time detection and analysis** of common indoor objects.  
