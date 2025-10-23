@@ -1,7 +1,9 @@
-﻿ultralytics==8.3.217
-opencv-python
+﻿# requirements.txt  (minimal safe pins)
+streamlit>=1.33,<2
+ultralytics==8.3.217
+opencv-python-headless
 pillow
-matplotlib
 pandas
+matplotlib
 numpy
-streamlit
+pyyaml
