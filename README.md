@@ -32,7 +32,7 @@ streamlit run src/app_streamlit.py --server.port 8501
 | Folder / File            | Description                        |
 | ------------------------ | ---------------------------------- |
 | `models/best1.pt`        | Main YOLOv8 model (custom trained) |
-| `models/room_best.pt`    | Alternate model variant            |
+| `models/best_refit.pt`    | YOLOv8 model (custom trained)(Balanced) |
 | `src/app_streamlit.py`   | Main Streamlit interface           |
 | `test_images/`           | Sample test images                 |
 | `videos/`                | Optional demo clips                |
@@ -112,7 +112,7 @@ streamlit run src/app_streamlit.py --server.port 8501
 | :-----------------------------------------: | :-----------------------------------------: |
 | ![Analytics 1](images/demo1_analytics1.png) | ![Analytics 2](images/demo1_analytics2.png) |
 
-|               Analytics Table               |               Annotated Video               |
+|               Analytics Annotated Video1               |               Annotated Video2              |
 | :-----------------------------------------: | :-----------------------------------------: |
 | ![Analytics 3](images/demo1_analytics3.png) | ![Analytics 4](images/demo1_analytics4.png) |
 
